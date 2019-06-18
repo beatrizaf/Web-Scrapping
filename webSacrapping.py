@@ -8,9 +8,12 @@ import requests
 from bs4 import BeautifulSoup
 import seaborn as sns
 
+busca = input("Digite o que deseja pesquisar na web:")
+json.dumps(busca) #converte para json
+
 def abrir():
-    with open('analise.json') as f:    
-        data = json.load(f)
+    with open('analise.json') as f: #abertura do arquivo json
+        data = json.load(f) #convertendo para um objeto Python
     f.close()
     return data 
 
