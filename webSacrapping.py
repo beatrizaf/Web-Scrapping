@@ -30,7 +30,7 @@ def analise(data):
     abrir = True
     while abrir == True:
 
-        letter = input("Informe:")  # RECEBE A PALAVRA DA ENTRADA PADRÃO E PÕES EM MINUSCULO PARA PADRONIZAR A LEITURA
+        letter = input("Informe:").lower()  # RECEBE A PALAVRA DA ENTRADA PADRÃO E PÕES EM MINUSCULO PARA PADRONIZAR A LEITURA
 
         if letter in data:
             lista = data[letter]
@@ -57,7 +57,7 @@ def procura_armazenamento(data, letter):
         # ESSAS VARIÁVEIS AQUI, ASSUMIRAM O PAPEL DE ZERAR QUANDO FOR FEITA UMA ITERAÇÃO
         lista1 = []
         lista2 = []
-        with open(filename, encoding='utf-8', mode='r') as f:
+        with io.open(filename, encoding='utf-8', mode='r') as f:
             arquivo = f.read()
 
             # 2º FARÁ A COMPARAÇÃO DE CADA ELEMENTO DA VARIÁVEL "STRINGS" COM CADA ELEMENTO DO ARQUIVO TXT
