@@ -1,1 +1,1 @@
-##### Projeto desenvolvido na disciplina de Algoritmos I
+##### Projeto desenvolvido na disciplina de Algoritmos e Programação
